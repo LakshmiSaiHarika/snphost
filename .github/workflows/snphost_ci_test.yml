@@ -31,7 +31,7 @@ jobs:
         run: |
               rm -rf ~/snphost
               cd ~/
-              git clone https://github.com/virtee/snphost.git
+              git clone https://github.com/LakshmiSaiHarika/snphost.git
               cd ~/snphost
 
               # Checkout PR branch
