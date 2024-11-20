@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 // comment
+// comment for PR test
 #![deny(clippy::all)]
 
 mod cert;
