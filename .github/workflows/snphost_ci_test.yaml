@@ -72,3 +72,8 @@ jobs:
         if: always()
         run: rm -rf ${HOME}/snphost
 
+# Update this workflow title dynamically with PR details
+run-name: |
+  ${{ (startsWith(github.event_name, 'workflow_dispatch') && format('snpguest PR CI test for PR #{0}/PR source branch({1})', github.event.inputs.pull_request_number, github.event.inputs.pull_request_branch)) ||
+         (startsWith(github.event_name, 'pull_request') && format('{0}', github.event.pull_request.title )) }}
+
