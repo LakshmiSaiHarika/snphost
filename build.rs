@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 //comment for snphost PR CI test
+//i Test PR CI test workflow for the latest commit entry
 use std::path::Path;
 use std::{env, fs, io, process};
 
